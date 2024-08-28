@@ -1,0 +1,368 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 62.5%;
+    overflow: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --bg-color: white;
+    --snd-bg-color: white;
+    --text-color: black;
+    --main-color: black;
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 700;
+    cursor: default;
+    margin-top: 0.5%;
+    font-family: "Century";
+    margin-left: 1%;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 1rem;
+    padding-right: 2rem;
+    font-weight: 900;
+    margin-top: 1%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img img {
+    width: 22vw;
+    border-radius: 50%;
+   
+    margin-left: 10rem;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: black;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+    margin-top: 2%;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: rgb(224, 220, 220);
+}
+
+.about-img img {
+    width: 24vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.4rem;
+}
+
+.about-content p {
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+    text-align: justify;
+}
+.about-content .btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: small;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    transition: 0.5s ease;
+    font-weight: 600;
+}
+.about-content .btn:hover {
+    box-shadow: none;
+}
+
+.container {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-top: 0px;
+
+}
+.about-content .container {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 1rem 1rem 1rem 0rem;
+    border-radius: 2rem;
+    text-align: left;
+    border: 0.2rem solid var(--text-color);
+    transition: 0.5s ease;
+    background: var(--snd-bg-color);
+}
+.project-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.project-container .project-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 280px;
+    background: gainsboro;
+    transition: 0.5s ease;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.project-container .project-box p{
+    font-size: 20px;
+    text-align: center;
+}
+.project-container .project-box img{
+    width: 200px;
+}
+.project-box:hover{
+    box-shadow: none;
+}
+.contact h2 {
+    margin-bottom: 3rem;
+}
+.contact{
+    background-color: rgb(224, 220, 220) ;
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.last-text p {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background:rgb(224, 220, 220) ;;
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.tab button {
+    background-color: var(--snd-bg-color);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: black;
+}
+
+.tab button:hover {
+    background-color: gainsboro;
+}
+.container .tabcontent {
+    color: black;
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    height: 100%;
+}
+.tabcontent p{
+    font-size: 14px;
+}
+.tabcontent h3{
+    font-size: 15px;
+}
+
+#Education {
+    color: black;
+    background-color: white;
+}
+
+#Skills {
+    color: black;
+    background-color: white;
+    font-size: 15px;
+}
+#Skills span{
+    color:black;
+     background-color: white;
+}
+
+#Certificate {
+    color: black;
+    background-color: white;
+}
+#Certificate a{
+    color:rgb(23, 129, 221);
+
+}
+#Achievement {
+    color: black;
+    background-color:white ;
+}
+#Achievement b{
+    color:rgb(23, 129, 221)
+}
